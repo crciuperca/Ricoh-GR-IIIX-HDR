@@ -15,6 +15,28 @@ HDR is generated from the processed image; it does not recover clipped RAW highl
 
 Profile icons: Natural `Nat`, Natural+ `Nat+`, Natural++ `Na++`; Provia `Prov`, Provia+ `Pro+`, Provia++ `Pr++`; IR `IR`, Green `Grn`, UV `UV`. Shared native mappings cover the quick menu, main Image Control menu, selected-profile summary, live view and playback details. New artwork is verified offline; camera rendering still needs a device test.
 
+## Samples
+
+Click a preview to open the full-resolution JPEG.
+
+| Standard | Standard HDR |
+| --- | --- |
+| [![Standard](samples/previews/original1.jpg)](samples/original1.JPG) | [![Standard HDR](samples/previews/std-hdr.jpg)](samples/std-hdr.jpg) |
+
+[Download Standard HDR with its full-resolution gain map](samples/std-hdr.jpg).
+
+| Natural | Provia |
+| --- | --- |
+| [![Natural](samples/previews/natural.jpg)](samples/natural.jpg) | [![Provia](samples/previews/provia.jpg)](samples/provia.jpg) |
+| **Natural+** | **Provia+** |
+| [![Natural+](samples/previews/natural-plus.jpg)](samples/natural-plus.jpg) | [![Provia+](samples/previews/provia-plus.jpg)](samples/provia-plus.jpg) |
+| **Natural++** | **Provia++** |
+| [![Natural++](samples/previews/natural-plus-plus.jpg)](samples/natural-plus-plus.jpg) | [![Provia++](samples/previews/provia-plus-plus.jpg)](samples/provia-plus-plus.jpg) |
+
+### IR
+
+[![IR](samples/previews/ir.jpg)](samples/ir.jpg)
+
 ## Requirements
 
 - **Python 3.8+**, available on PATH. No extra Python packages, compiler, or network access required.

@@ -1,0 +1,58 @@
+GR IIIx native-menu prototype dependencies
+
+1. tinyblckc0000al/gr3x-fw-play
+   https://github.com/tinyblckc0000al/gr3x-fw-play
+   Revision: 2ad89c1f8a25b27a2068f03a394444ac418e8631
+   Original additions: GPL-2.0-only; upstream portions retain their notices.
+   Used from its external checkout: make_slots15, selected make_slots16 helpers,
+   gr3patch_iiix, assembler interface, and native ARM emulation harness.
+   We bypass the unused eager GR IV calibration load in memory, preserve all
+   original icons, retain Standard MultiAxial, and limit custom curves to the
+   three A-Natural entries. The upstream checkout is not modified.
+
+2. idontknownihil/gr3-film-mods
+   https://github.com/idontknownihil/gr3-film-mods
+   MIT for upstream tools, with separately licensed fit data.
+   Used indirectly through gr3x-fw-play's retained tool subset.
+   No third-party film-fit data is used for A-Natural or IR.
+
+3. DoYitNow/gr-custom-tool
+   https://github.com/DoYitNow/gr-custom-tool
+   GPL-2.0-only. Container codec subset retained by gr3x-fw-play under
+   tools/gr3-film-mods/third_party/gr-custom-tool, with upstream notices.
+
+4. Existing GRKit runtime/plugins/ir/ir.c and plugin ABI
+   MIT, source included at compile time from this repository, without copying
+   a second divergent implementation. Own native-cfw glue is MIT.
+
+The generated artifact includes proprietary Ricoh firmware supplied locally.
+Open-source licences for the tools do not grant rights over Ricoh's firmware.
+No complete firmware or third-party source is added to version control here.
+
+5. google/libultrahdr (HDR mux directory layout / desktop reference encoder)
+   https://github.com/google/libultrahdr
+   Revision: 47d9f00726adba87e3f04059a50a8b34492e057a
+   The MPF directory layout in hdr/jpeg_mux.c follows multipictureformat.cpp.
+   Used under the MIT option. The following notice is retained:
+
+   MIT License
+   Copyright (c) 2022 The Android Open Source Project
+   Copyright 2023 The Android Open Source Project
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.

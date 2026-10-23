@@ -1,0 +1,35 @@
+{
+  "cfw_build": "native-cfw-profile-icons-2",
+  "copied_from_stock_bytes": 29682619,
+  "custom_bytes": 31134136,
+  "custom_sha256": "6415d116b0bd6ac95fc538c08d8abbbb860832d3b176b9587b8326ff06341878",
+  "features": [
+    "Natural recalibrated from R0010752",
+    "Original Ricoh profiles retained",
+    "RAW+JPG HDR with full-resolution gain map",
+    "sRGB and Display P3",
+    "Custom P3/HDR and all nine profile icons"
+  ],
+  "format": 1,
+  "literal_bytes": 1451517,
+  "operations_bytes": 1451990,
+  "operations_sha256": "953b307a288d18c3edf8ad60cf3855980a6ee5bf55669d7b676d0292b90d9032",
+  "profiles": [
+    "Natural",
+    "Natural+",
+    "Natural++",
+    "IR",
+    "Green",
+    "UV",
+    "Provia",
+    "Provia+",
+    "Provia++"
+  ],
+  "runtime_dependency": "Python 3 standard library only",
+  "stock_bytes": 30391788,
+  "stock_sha256": "708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7",
+  "target": "Ricoh GR IIIx 1.60",
+  "package": "native-cfw/patches/gr3x-160-profile-icons.cfwpatch",
+  "package_bytes": 642368,
+  "package_sha256": "a6918c3b181208ce9f4596ef2e5270e3376abb5de315269b8bacf8803d69f9b5"
+}

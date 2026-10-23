@@ -1,0 +1,4 @@
+*.bin
+*.partial
+__pycache__/
+custom-firmware/

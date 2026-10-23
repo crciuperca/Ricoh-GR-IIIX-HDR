@@ -13,7 +13,13 @@ An offline patcher for **Ricoh GR IIIx firmware 1.60**. It reproduces the curren
 
 HDR is generated from the processed image; it does not recover clipped RAW highlights. RAW remains on its native path. Full-resolution HDR can take longer to save; use single shots and wait for processing to finish. These are experimental profiles and firmware.
 
-Profile icons: Natural `Nat`, Natural+ `Nat+`, Natural++ `Na++`; Provia `Prov`, Provia+ `Pro+`, Provia++ `Pr++`; IR `IR`, Green `Grn`, UV `UV`. Shared native mappings cover the quick menu, main Image Control menu, selected-profile summary, live view and playback details. New artwork is verified offline; camera rendering still needs a device test.
+Profile icons: Natural `Nat`, Natural+ `Nat+`, Natural++ `Na++`; Provia `Prov`, Provia+ `Pro+`, Provia++ `Pr++`; IR `IR`, Green `Grn`, UV `UV`. Shared native mappings cover the quick menu, main Image Control menu, selected-profile summary, live view and playback details.
+
+![Custom profile icons: Nat, Nat+, Na++, IR, Grn, UV, Prov, Pro+, Pr++](profile-icons-preview.png)
+
+Color space and format icons:
+
+![P3 and HDR icons](p3-hdr-icons-preview.png)
 
 ## Camera usage notes
 

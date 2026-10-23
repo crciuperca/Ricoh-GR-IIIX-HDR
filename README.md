@@ -15,27 +15,30 @@ HDR is generated from the processed image; it does not recover clipped RAW highl
 
 Profile icons: Natural `Nat`, Natural+ `Nat+`, Natural++ `Na++`; Provia `Prov`, Provia+ `Pro+`, Provia++ `Pr++`; IR `IR`, Green `Grn`, UV `UV`. Shared native mappings cover the quick menu, main Image Control menu, selected-profile summary, live view and playback details. New artwork is verified offline; camera rendering still needs a device test.
 
+## Camera usage notes
+
+- After switching the camera on, wait a few seconds for the custom icons to update.
+- Saved **Format Type** and **Color Space** selections sometimes do not persist after a reboot. Check both settings after startup and reselect your preferred values if needed.
+
 ## Samples
 
-Click a preview to open the full-resolution JPEG.
+Click an image to open the sample.
 
-| Standard | Standard HDR |
+| Standard | Standard HDR (SDR preview) |
 | --- | --- |
-| [![Standard](samples/previews/original1.jpg)](samples/original1.JPG) | [![Standard HDR](samples/previews/std-hdr.jpg)](samples/std-hdr.jpg) |
-
-[Download Standard HDR with its full-resolution gain map](samples/std-hdr.jpg).
+| [![Standard](samples/original1.jpg)](samples/original1.jpg) | [![Standard HDR](samples/std-hdr.jpg)](samples/std-hdr.jpg) |
 
 | Natural | Provia |
 | --- | --- |
-| [![Natural](samples/previews/natural.jpg)](samples/natural.jpg) | [![Provia](samples/previews/provia.jpg)](samples/provia.jpg) |
+| [![Natural](samples/natural.jpg)](samples/natural.jpg) | [![Provia](samples/provia.jpg)](samples/provia.jpg) |
 | **Natural+** | **Provia+** |
-| [![Natural+](samples/previews/natural-plus.jpg)](samples/natural-plus.jpg) | [![Provia+](samples/previews/provia-plus.jpg)](samples/provia-plus.jpg) |
+| [![Natural+](samples/natural-plus.jpg)](samples/natural-plus.jpg) | [![Provia+](samples/provia-plus.jpg)](samples/provia-plus.jpg) |
 | **Natural++** | **Provia++** |
-| [![Natural++](samples/previews/natural-plus-plus.jpg)](samples/natural-plus-plus.jpg) | [![Provia++](samples/previews/provia-plus-plus.jpg)](samples/provia-plus-plus.jpg) |
+| [![Natural++](samples/natural-plus-plus.jpg)](samples/natural-plus-plus.jpg) | [![Provia++](samples/provia-plus-plus.jpg)](samples/provia-plus-plus.jpg) |
 
 ### IR
 
-[![IR](samples/previews/ir.jpg)](samples/ir.jpg)
+[![IR](samples/ir.jpg)](samples/ir.jpg)
 
 ## Requirements
 

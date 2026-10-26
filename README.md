@@ -62,7 +62,7 @@ Click an image to open the sample.
 - The **original Ricoh GR IIIx 1.60 firmware `.bin`**. Other models, firmware versions, and already-patched files are rejected.
 - Windows uses PowerShell for the `.bat` launcher. Linux/macOS use `sh`.
 
-Keep the scripts and the `native-cfw` folder together. The original firmware is not included or downloaded.
+Download the repository using **Code > Download ZIP**, extract it, or clone it with Git. Keep the scripts and the `native-cfw` folder together. The original firmware is not included or downloaded.
 
 ## Run
 

@@ -66,16 +66,23 @@ def generate(stock, custom):
         ops.extend(b'\x01' + struct.pack('<I', len(literal)) + literal)
     ops.append(255)
     meta = {'format': 1, 'target': 'Ricoh GR IIIx 1.60',
-            'cfw_build': 'native-cfw-profile-icons-2',
+            'cfw_build': 'native-cfw-smooth-profiles-1',
             'stock_sha256': STOCK_SHA, 'custom_sha256': CUSTOM_SHA,
             'stock_bytes': len(stock), 'custom_bytes': len(custom),
             'copied_from_stock_bytes': copied, 'literal_bytes': inserted,
             'operations_bytes': len(ops), 'operations_sha256': hashlib.sha256(ops).hexdigest(),
             'profiles': ['Natural', 'Natural+', 'Natural++', 'IR', 'Green', 'UV',
                          'Provia', 'Provia+', 'Provia++'],
-            'features': ['Natural recalibrated from R0010752', 'Original Ricoh profiles retained',
-                         'RAW+JPG HDR with full-resolution gain map', 'sRGB and Display P3',
-                         'Custom P3/HDR and all nine profile icons'],
+            'features': ['Natural recalibrated from R0010752', 'Smoothed monotone tone curves for all six Natural and Provia profiles', 'Original Ricoh profiles retained',
+                         'RAW+JPG HDR with full-resolution gain map and bounded adaptive compression', 'sRGB and Display P3',
+                         'Custom P3/HDR and all nine profile icons', 'ADJ RAW+JPG HDR selection',
+                         'HDR/P3 selections persisted in native active settings',
+                         'RAW Development P3 and HDR P3 JPEG exports',
+                         'Preview-isolated RAW export selection and bounded RDTRACE diagnostics',
+                         'RAW selection survives native Adobe reload and shared processing callbacks',
+                         'Multi RAW Development with latest-RAW recipe UI, sequential exports and X/Y progress',
+                         'On-card RAW queue and alternating CRC-protected completion and recipe records',
+                         'Resume remaining RAWs; regenerate deleted developed JPEGs'],
             'runtime_dependency': 'Python 3 standard library only'}
     header = json.dumps(meta, sort_keys=True, separators=(',', ':')).encode('utf-8')
     return MAGIC + struct.pack('<I', len(header)) + header + zlib.compress(ops, 9), meta

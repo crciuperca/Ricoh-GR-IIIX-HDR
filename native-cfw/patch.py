@@ -19,8 +19,8 @@ if sys.version_info < (3, 8):
 
 MAGIC = b'GRCFWP1\n'
 STOCK_SHA = '708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7'
-CUSTOM_SHA = '6415d116b0bd6ac95fc538c08d8abbbb860832d3b176b9587b8326ff06341878'
-PACKAGE = Path(__file__).resolve().parent / 'patches' / 'gr3x-160-profile-icons.cfwpatch'
+CUSTOM_SHA = 'ca3b63c8929abc76ccf72398bca8bc5e09905a59a1d3b8708b3db86f26a4e258'
+PACKAGE = Path(__file__).resolve().parent / 'patches' / 'gr3x-160-multiraw.cfwpatch'
 
 
 def digest(path):

@@ -1,0 +1,41 @@
+{
+  "cfw_build": "native-cfw-smooth-profiles-1",
+  "copied_from_stock_bytes": 29561105,
+  "custom_bytes": 31277816,
+  "custom_sha256": "ca3b63c8929abc76ccf72398bca8bc5e09905a59a1d3b8708b3db86f26a4e258",
+  "features": [
+    "Natural recalibrated from R0010752",
+    "Smoothed monotone tone curves for all six Natural and Provia profiles",
+    "Original Ricoh profiles retained",
+    "RAW+JPG HDR with full-resolution gain map and bounded adaptive compression",
+    "sRGB and Display P3",
+    "Custom P3/HDR and all nine profile icons",
+    "ADJ RAW+JPG HDR selection",
+    "HDR/P3 selections persisted in native active settings",
+    "RAW Development P3 and HDR P3 JPEG exports",
+    "Preview-isolated RAW export selection and bounded RDTRACE diagnostics",
+    "RAW selection survives native Adobe reload and shared processing callbacks",
+    "Multi RAW Development with latest-RAW recipe UI, sequential exports and X/Y progress",
+    "On-card RAW queue and alternating CRC-protected completion and recipe records",
+    "Resume remaining RAWs; regenerate deleted developed JPEGs"
+  ],
+  "format": 1,
+  "literal_bytes": 1716711,
+  "operations_bytes": 1717202,
+  "operations_sha256": "bac80b3e03d607176e27a0d08da04f202c3b08922ecd6b151efd12c669ef2d7e",
+  "profiles": [
+    "Natural",
+    "Natural+",
+    "Natural++",
+    "IR",
+    "Green",
+    "UV",
+    "Provia",
+    "Provia+",
+    "Provia++"
+  ],
+  "runtime_dependency": "Python 3 standard library only",
+  "stock_bytes": 30391788,
+  "stock_sha256": "708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7",
+  "target": "Ricoh GR IIIx 1.60"
+}

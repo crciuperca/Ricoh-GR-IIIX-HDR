@@ -9,8 +9,8 @@ An offline patcher for **Ricoh GR IIIx firmware 1.60**. It reproduces the curren
 - **RAW Development** exports in P3 or HDR Display P3, using the P3 and HDR icons.
 - **Multi RAW Development** applies one recipe to all camera RAWs on the card, with a progress bar, X/Y counter and resumable journal.
 - **Natural / Natural+ / Natural++** calibrated profiles, with progressively deeper shadows.
-- **Provia / Provia+ / Provia++** profiles fitted to a photographed Fujifilm XE5 Provia reference.
-- **Smooth profile gradients** for all six Natural and Provia profiles, with softened tone-curve slope changes and preserved color matrices and black/white endpoints.
+- **Provia / Provia+ / Provia++** profiles refined against the custom Lightroom Provia rendering of the same Ricoh RAW, using smooth RGB curves and a native post-gamma color matrix.
+- **Smooth profile gradients** for all six Natural and Provia profiles, with smooth monotone tone curves and global color transforms.
 - **IR / Green / UV** RGB contrast effects. These do not capture physical infrared or ultraviolet light.
 - Custom **P3/HDR and profile icons**, with the original camera looks retained.
 
@@ -24,8 +24,11 @@ Color space and format icons:
 
 ![P3 and HDR icons](p3-hdr-icons-preview.png)
 
+The latest Provia refinement was checked against an actual in-camera export: mean chart error was **Delta E 2000 1.72**, compared with 2.17 previously. It is a measured approximation, not an exact reproduction of the Lightroom renderer. Provia+ and Provia++ retain progressively deeper shadows.
+
 ## Camera usage notes
 
+- After generating the firmware, install it through the camera **Firmware Update** procedure; copying the file to the SD card alone does not update the installed firmware.
 - After switching the camera on, wait a few seconds for the custom icons to update.
 - **RAW+JPG HDR** is available in both the main File Format menu and the ADJ File Format control.
 - **File Format** and **Color Space** selections are stored with the native camera settings. After installing this update, select your preferred options once and switch the camera off normally to save them.
@@ -105,7 +108,7 @@ Every launcher accepts `--info` for version details and `-h` for help. Set `PYTH
 All launchers apply the same version-specific binary delta and produce identical firmware. The input is preserved, existing output files are refused, and the complete input/output SHA-256 hashes are checked. Nothing is automatically flashed or copied to an SD card.
 
 - Stock GR IIIx 1.60 SHA-256: `708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7`
-- Current CFW SHA-256: `ca3b63c8929abc76ccf72398bca8bc5e09905a59a1d3b8708b3db86f26a4e258`
-- Build: `native-cfw-smooth-profiles-1`
+- Current CFW SHA-256: `8d8d0c6060a0c13a06cf0afa84fcd7e11b0d16dc3faab78004bfbbc27e873760`
+- Build: `native-cfw-provia-lrc-v4p-20261106`
 
 The delta is fixed to this build. It does not compile or update the firmware features when run. `native-cfw/make_patch.py` and `native-cfw/test_patcher.py` are developer utilities for generating and testing a pinned delta; applying it only needs the launchers, `patch.py`, and the patch package. See `native-cfw/THIRD_PARTY.txt` for attribution.

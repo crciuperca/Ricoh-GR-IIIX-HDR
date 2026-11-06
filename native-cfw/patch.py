@@ -19,7 +19,7 @@ if sys.version_info < (3, 8):
 
 MAGIC = b'GRCFWP1\n'
 STOCK_SHA = '708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7'
-CUSTOM_SHA = 'ca3b63c8929abc76ccf72398bca8bc5e09905a59a1d3b8708b3db86f26a4e258'
+CUSTOM_SHA = '8d8d0c6060a0c13a06cf0afa84fcd7e11b0d16dc3faab78004bfbbc27e873760'
 PACKAGE = Path(__file__).resolve().parent / 'patches' / 'gr3x-160-multiraw.cfwpatch'
 
 

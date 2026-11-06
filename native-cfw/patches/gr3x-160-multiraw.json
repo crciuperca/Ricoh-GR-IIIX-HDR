@@ -1,10 +1,31 @@
 {
-  "cfw_build": "native-cfw-smooth-profiles-1",
-  "copied_from_stock_bytes": 29561105,
+  "package_bytes": 761558,
+  "package_sha256": "7fbf6cfbee6186aa7fd70ea8c07b7d8f786da66bdcb04ef33c783ceb089560e7",
+  "format": 1,
+  "target": "Ricoh GR IIIx 1.60",
+  "cfw_build": "native-cfw-provia-lrc-v4p-20261106",
+  "stock_sha256": "708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7",
+  "custom_sha256": "8d8d0c6060a0c13a06cf0afa84fcd7e11b0d16dc3faab78004bfbbc27e873760",
+  "stock_bytes": 30391788,
   "custom_bytes": 31277816,
-  "custom_sha256": "ca3b63c8929abc76ccf72398bca8bc5e09905a59a1d3b8708b3db86f26a4e258",
+  "copied_from_stock_bytes": 29561105,
+  "literal_bytes": 1716711,
+  "operations_bytes": 1717202,
+  "operations_sha256": "1be816cde02d333afe64061095d36a6e7164ec8de1d895773fa475f540e915d7",
+  "profiles": [
+    "Natural",
+    "Natural+",
+    "Natural++",
+    "IR",
+    "Green",
+    "UV",
+    "Provia",
+    "Provia+",
+    "Provia++"
+  ],
   "features": [
     "Natural recalibrated from R0010752",
+    "Provia refined against custom Lightroom rendering with smooth RGB curves and a native post-gamma color matrix",
     "Smoothed monotone tone curves for all six Natural and Provia profiles",
     "Original Ricoh profiles retained",
     "RAW+JPG HDR with full-resolution gain map and bounded adaptive compression",
@@ -19,23 +40,5 @@
     "On-card RAW queue and alternating CRC-protected completion and recipe records",
     "Resume remaining RAWs; regenerate deleted developed JPEGs"
   ],
-  "format": 1,
-  "literal_bytes": 1716711,
-  "operations_bytes": 1717202,
-  "operations_sha256": "bac80b3e03d607176e27a0d08da04f202c3b08922ecd6b151efd12c669ef2d7e",
-  "profiles": [
-    "Natural",
-    "Natural+",
-    "Natural++",
-    "IR",
-    "Green",
-    "UV",
-    "Provia",
-    "Provia+",
-    "Provia++"
-  ],
-  "runtime_dependency": "Python 3 standard library only",
-  "stock_bytes": 30391788,
-  "stock_sha256": "708e79f3b7b96a7e1581b4acf4c412233050a1832718ef7f06c8397db1b431c7",
-  "target": "Ricoh GR IIIx 1.60"
+  "runtime_dependency": "Python 3 standard library only"
 }
